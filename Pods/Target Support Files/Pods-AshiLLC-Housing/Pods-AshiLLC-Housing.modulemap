@@ -1,0 +1,6 @@
+framework module Pods_AshiLLC_Housing {
+  umbrella header "Pods-AshiLLC-Housing-umbrella.h"
+
+  export *
+  module * { export * }
+}
