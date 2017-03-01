@@ -17,6 +17,9 @@
 		2A2E38D41E6260AA00C62434 /* AshiLLC_HousingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2E38D31E6260AA00C62434 /* AshiLLC_HousingTests.swift */; };
 		2A2E38DF1E6260AA00C62434 /* AshiLLC_HousingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2E38DE1E6260AA00C62434 /* AshiLLC_HousingUITests.swift */; };
 		2A2E38ED1E6260F200C62434 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A2E38EC1E6260F200C62434 /* GoogleService-Info.plist */; };
+		2A80AE9E1E63C8FD00AE1EB3 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A80AE9D1E63C8FD00AE1EB3 /* FancyView.swift */; };
+		2A80AEA11E63C9F100AE1EB3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A80AEA01E63C9F100AE1EB3 /* Constants.swift */; };
+		2A80AEA31E63CD5B00AE1EB3 /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A80AEA21E63CD5B00AE1EB3 /* RoundBtn.swift */; };
 		67592EBF492E9C4A572922BE /* Pods_AshiLLC_HousingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0237F8849F5B09BE62CE0C7 /* Pods_AshiLLC_HousingUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +57,10 @@
 		2A2E38DE1E6260AA00C62434 /* AshiLLC_HousingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AshiLLC_HousingUITests.swift; sourceTree = "<group>"; };
 		2A2E38E01E6260AA00C62434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A2E38EC1E6260F200C62434 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2A43561B1E653AB000C76DD8 /* AshiLLC-Housing.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "AshiLLC-Housing.entitlements"; sourceTree = "<group>"; };
+		2A80AE9D1E63C8FD00AE1EB3 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		2A80AEA01E63C9F100AE1EB3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2A80AEA21E63CD5B00AE1EB3 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		2D1D8A560295CD1568F975BC /* Pods-AshiLLC-Housing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AshiLLC-Housing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AshiLLC-Housing/Pods-AshiLLC-Housing.debug.xcconfig"; sourceTree = "<group>"; };
 		593D049B700745F2007D34B9 /* Pods-AshiLLC-Housing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AshiLLC-Housing.release.xcconfig"; path = "Pods/Target Support Files/Pods-AshiLLC-Housing/Pods-AshiLLC-Housing.release.xcconfig"; sourceTree = "<group>"; };
 		80002137E109A9A1FA90B95E /* Pods-AshiLLC-HousingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AshiLLC-HousingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AshiLLC-HousingTests/Pods-AshiLLC-HousingTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +133,8 @@
 		2A2E38BD1E6260AA00C62434 /* AshiLLC-Housing */ = {
 			isa = PBXGroup;
 			children = (
+				2A43561B1E653AB000C76DD8 /* AshiLLC-Housing.entitlements */,
+				2A80AE9F1E63C9D100AE1EB3 /* Util */,
 				2A2E38F01E628E3600C62434 /* View */,
 				2A2E38EF1E628E2E00C62434 /* Model */,
 				2A2E38EE1E628E0D00C62434 /* Controller */,
@@ -175,8 +184,18 @@
 		2A2E38F01E628E3600C62434 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2A80AE9D1E63C8FD00AE1EB3 /* FancyView.swift */,
+				2A80AEA21E63CD5B00AE1EB3 /* RoundBtn.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		2A80AE9F1E63C9D100AE1EB3 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2A80AEA01E63C9F100AE1EB3 /* Constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		41210988F6C2B1DB40FCBF12 /* Pods */ = {
@@ -271,6 +290,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = C9T3HXV3LJ;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					2A2E38CE1E6260AA00C62434 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -478,7 +502,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A2E38C11E6260AA00C62434 /* ViewController.swift in Sources */,
+				2A80AEA31E63CD5B00AE1EB3 /* RoundBtn.swift in Sources */,
 				2A2E38BF1E6260AA00C62434 /* AppDelegate.swift in Sources */,
+				2A80AE9E1E63C8FD00AE1EB3 /* FancyView.swift in Sources */,
+				2A80AEA11E63C9F100AE1EB3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,6 +658,7 @@
 			baseConfigurationReference = 2D1D8A560295CD1568F975BC /* Pods-AshiLLC-Housing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "AshiLLC-Housing/AshiLLC-Housing.entitlements";
 				DEVELOPMENT_TEAM = C9T3HXV3LJ;
 				INFOPLIST_FILE = "AshiLLC-Housing/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -645,6 +673,7 @@
 			baseConfigurationReference = 593D049B700745F2007D34B9 /* Pods-AshiLLC-Housing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "AshiLLC-Housing/AshiLLC-Housing.entitlements";
 				DEVELOPMENT_TEAM = C9T3HXV3LJ;
 				INFOPLIST_FILE = "AshiLLC-Housing/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

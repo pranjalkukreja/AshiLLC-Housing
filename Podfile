@@ -10,7 +10,8 @@ target 'AshiLLC-Housing' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
-
+  pod 'FBSDKLoginKit'
+  
   target 'AshiLLC-HousingTests' do
     inherit! :search_paths
     # Pods for testing
