@@ -11,6 +11,7 @@ target 'AshiLLC-Housing' do
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
   pod 'FBSDKLoginKit'
+  pod 'SwiftKeychainWrapper'
   
   target 'AshiLLC-HousingTests' do
     inherit! :search_paths
